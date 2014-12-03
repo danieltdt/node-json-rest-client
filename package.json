@@ -1,0 +1,30 @@
+{
+  "name": "json-rest-client",
+  "version": "0.0.1",
+  "description": "Declarative REST client",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:danieltdt/json-rest-client.git"
+  },
+  "keywords": [
+    "rest",
+    "client"
+  ],
+  "author": "Daniel Teixeira <daniel.t.dt+npm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danieltdt/json-rest-client/issues"
+  },
+  "homepage": "https://github.com/danieltdt/json-rest-client",
+  "dependencies": {
+    "bluebird": "^2.3.11",
+    "restify": "^2.8.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  }
+}

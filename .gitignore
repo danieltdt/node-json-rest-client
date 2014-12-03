@@ -1,0 +1,6 @@
+# Development files
+/node_modules
+/tmp
+
+# Other files...
+npm-debug.log
