@@ -17,7 +17,7 @@ Returns a `rest` object. Check Usage for more info.
 ## Usage
 
 ```javascript
-var rest = require('@dnp/rest-client')({
+var rest = require('json-rest-client')({
   url: 'http://api.server',
   version: '~1'
 }, {
