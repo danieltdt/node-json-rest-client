@@ -5,6 +5,8 @@ var bluebird = require('bluebird');
 
 module.exports = restClient;
 
+restClient.errors = restify.errors;
+
 function restClient(clientOptions, requestOptions) {
   var client = restify.createJsonClient(clientOptions || {});
   var clientAsync;

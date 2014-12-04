@@ -111,4 +111,8 @@ describe('json-rest-client', function () {
 
     this.api.articles().latest();
   });
+
+  it('exports restify errors', function () {
+    assert(restClient.errors, '.errors is not present.');
+  });
 });
