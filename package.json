@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:danieltdt/json-rest-client.git"
+    "url": "git@github.com:danieltdt/node-json-rest-client.git"
   },
   "keywords": [
     "rest",
@@ -17,9 +17,9 @@
   "author": "Daniel Teixeira <daniel.t.dt+npm@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danieltdt/json-rest-client/issues"
+    "url": "https://github.com/danieltdt/node-json-rest-client/issues"
   },
-  "homepage": "https://github.com/danieltdt/json-rest-client",
+  "homepage": "https://github.com/danieltdt/node-json-rest-client",
   "dependencies": {
     "bluebird": "^2.3.11",
     "restify": "^2.8.3"
