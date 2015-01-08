@@ -11,9 +11,15 @@ function restClient(clientOptions, requestOptions) {
   var client = restify.createJsonClient(clientOptions || {});
   var clientAsync;
   var request;
+  var prefix;
+  var opts;
+
+  opts = requestOptions || {};
+  prefix = ('prefix' in opts ? opts.prefix : '');
+  delete opts.prefix;
 
   clientAsync = bluebird.promisifyAll(client);
-  request = new Request(clientAsync, requestOptions || {});
+  request = new Request(clientAsync, opts, prefix);
 
   return request;
 }

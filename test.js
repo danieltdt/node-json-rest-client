@@ -112,6 +112,21 @@ describe('json-rest-client', function () {
     this.api.articles().latest();
   });
 
+  it('accepts a path prefix', function (done) {
+    var rest = restClient({url: 'http://localhost:1337'}, {prefix: '/api/v1'});
+    var api = {users: rest.resource('/users')};
+
+    this.server.once('request', function (req) {
+      try {
+        assert.equal(req.method, 'GET');
+        assert.equal(req.url, '/api/v1/users');
+      } catch (e) { return done(e); }
+      done();
+    });
+
+    api.users().all();
+  });
+
   it('exports restify errors', function () {
     assert(restClient.errors, '.errors is not present.');
   });
