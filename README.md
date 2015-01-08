@@ -9,8 +9,11 @@ Declarative REST client.
 
 Initialize a REST client using [restify](https://www.npmjs.org/package/restify).
 
-`clientOptions` are passed to `restify.createJsonClient`; `requestOptions` are
-passed to every request (`get`, `post`, etc).
+`clientOptions` are passed to `restify.createJsonClient`. The only additional
+option that is not passed to `restify` is `clientOptions.prefix`. This option
+allow you to define a base path for your api (i.e. `/api/v1`).
+
+`requestOptions` are passed to every request (`get`, `post`, etc).
 
 Returns a `rest` object. Check Usage for more info.
 
