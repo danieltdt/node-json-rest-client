@@ -37,19 +37,21 @@ function buildRequest(method, client, defaults, prefix) {
       var options;
       var entity;
       var parsed;
+      var args;
 
       if (acceptsEntity(method)) {
         entity = arguments[0];
-        options = arguments[1] || {};
+        options = merge(defaults, arguments[1] || {});
+        args = [options, entity];
       } else {
-        options = arguments[0] || {};
+        options = merge(defaults, arguments[0] || {});
+        args = [options];
       }
 
-      options = merge(defaults, options);
       parsed = parsePath(prefix, path, void 0, options.params);
 
       options.path = parsed.path;
-      return client[method + 'Async'](options, entity).spread(reorderRequestFulfillment);
+      return client[method + 'Async'].apply(client, args).spread(reorderRequestFulfillment);
     };
   };
 
