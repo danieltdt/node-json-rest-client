@@ -22,9 +22,10 @@
   "homepage": "https://github.com/danieltdt/node-json-rest-client",
   "dependencies": {
     "bluebird": "^2.3.11",
-    "restify": "^2.8.3"
+    "restify-clients": "^2.6.7",
+    "restify-errors": "^8.0.1"
   },
   "devDependencies": {
-    "mocha": "^2.0.1"
+    "mocha": "^6.2.0"
   }
 }

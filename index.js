@@ -1,14 +1,15 @@
 'use strict';
 
-var restify = require('restify');
+var restifyClients = require('restify-clients');
+var restifyErrors = require('restify-errors');
 var bluebird = require('bluebird');
 
 module.exports = restClient;
 
-restClient.errors = restify.errors;
+restClient.errors = restifyErrors;
 
 function restClient(clientOptions, requestOptions) {
-  var client = restify.createJsonClient(clientOptions || {});
+  var client = restifyClients.createJsonClient(clientOptions || {});
   var clientAsync;
   var request;
   var prefix;
