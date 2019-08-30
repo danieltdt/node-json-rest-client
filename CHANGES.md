@@ -1,5 +1,9 @@
 # json-rest-client
 
+## 2.0.0
+
+- new: update restify version (things may break)
+
 ## 1.2.0
 
 - fix: fix restify functions arity (#2)
