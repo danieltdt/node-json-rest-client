@@ -1,5 +1,9 @@
 # json-rest-client
 
+## 2.0.1
+
+- chore: update dev dependencies
+
 ## 2.0.0
 
 - new: update restify version (things may break)
