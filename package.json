@@ -26,6 +26,6 @@
     "restify-errors": "^8.0.1"
   },
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^7.1.1"
   }
 }
