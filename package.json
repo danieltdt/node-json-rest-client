@@ -1,6 +1,6 @@
 {
   "name": "json-rest-client",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Declarative REST client",
   "main": "index.js",
   "scripts": {
