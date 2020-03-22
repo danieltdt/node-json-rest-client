@@ -1,5 +1,9 @@
 # json-rest-client
 
+## 2.0.2
+
+- chore: update mocha version
+
 ## 2.0.1
 
 - chore: update dev dependencies
